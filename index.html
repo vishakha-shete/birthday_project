@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>✨ Happy Birthday, Prashu ✨</title>
+
+  <meta name="description" content="A little magical birthday surprise made with love by Vishakha for Prashu.">
+
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Sacramento&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- =========================================
+       BACKGROUND
+  ========================================== -->
+
+  <canvas id="bgCanvas"></canvas>
+
+  <div class="floating-hearts"></div>
+
+  <!-- =========================================
+       MAIN CONTAINER
+  ========================================== -->
+
+  <div class="container">
+
+    <!-- =========================================
+         HERO
+    ========================================== -->
+
+    <header class="hero">
+
+      <div class="hero-content">
+
+        <div class="hero-badge">
+          ✨ A little something for you
+        </div>
+
+        <h1 class="title">
+          Happy Birthday,
+          <span>Prashu</span> 💗
+        </h1>
+
+        <p class="typed" id="typedText">
+          A little surprise made with ♥ by Vishakha...
+        </p>
+
+        <div class="hero-buttons">
+
+          <button class="btn" id="playEntrance">
+            🎁 Open Your Surprise
+          </button>
+
+          <button class="btn ghost" id="toggleMusic">
+            🎵 Birthday Music
+          </button>
+
+        </div>
+
+        <!-- ONE audio element only -->
+        <audio id="bgMusic" loop preload="auto">
+          <source src="Happy Birthday To You.mp3" type="audio/mpeg">
+        </audio>
+
+      </div>
+
+      <!-- Highlight Card -->
+
+      <div class="highlight-card">
+
+        <div class="mini-sparkle">✨</div>
+
+        <span class="small-label">
+          TODAY'S HIGHLIGHT
+        </span>
+
+        <h3>
+          For my favorite human 💕
+        </h3>
+
+        <p id="highlight">
+          You are loved more than you know.
+          And today is all about celebrating YOU.
+        </p>
+
+        <div class="from-to">
+
+          <div>
+            <small>FROM</small>
+            <strong>Vishakha 💗</strong>
+          </div>
+
+          <div>
+            <small>FOR</small>
+            <strong>Prashu 🫶</strong>
+          </div>
+
+        </div>
+
+      </div>
+
+    </header>
+
+
+    <!-- =========================================
+         SECRET MESSAGE
+    ========================================== -->
+
+    <section class="card secret-message" id="secretMessage">
+
+      <span class="section-emoji">💌</span>
+
+      <h2>
+        Before you continue...
+      </h2>
+
+      <p>
+        There are some things I can never properly express
+        with words.
+      </p>
+
+      <p class="special-line">
+        So I made you a little world instead. 🌎💗
+      </p>
+
+      <button class="btn" id="revealMessage">
+        Read My Message 💌
+      </button>
+
+      <div class="hidden-message" id="hiddenMessage">
+
+        <p>
+          Prashuuuu... 🥹💗
+        </p>
+
+        <p>
+          I honestly don't know how to put our friendship
+          into words.
+        </p>
+
+        <p>
+          Some people come into your life and become memories.
+          But somehow, you became a part of my life that
+          I never want to lose.
+        </p>
+
+        <p>
+          No matter how much time passes, how far we are,
+          or how crazy life gets...
+          <strong>it's always going to be us.</strong>
+        </p>
+
+        <p class="big-love">
+          ILYSM, my forever bestie. 🫂💗
+        </p>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================
+         MEMORIES GALLERY
+    ========================================== -->
+
+    <section id="watch-memories" class="section">
+
+      <div class="section-heading">
+
+        <span>🌸</span>
+
+        <div>
+          <h2>Memories</h2>
+          <p>Little moments and big memories.</p>
+        </div>
+
+      </div>
+
+      <div class="memories-gallery">
+
+        <!-- IMAGE -->
+
+        <div class="memory">
+          <img src="littele prashu.jpg" alt="Prashu memory" class="gallery-image">
+        </div>
+
+
+        <!-- GOOGLE DRIVE VIDEO -->
+
+        <div class="memory drive-video">
+
+          <iframe src="we.mp4" allow="autoplay"
+            allowfullscreen title="Our memory video">
+          </iframe>
+
+        </div>
+
+
+        <!-- IMAGE -->
+
+        <div class="memory">
+          <img src="i.phone.jpg" alt="Our memory" class="gallery-image">
+        </div>
+
+
+        <!-- IMAGE -->
+
+        <div class="memory">
+          <img src="little mid.jpg" alt="Our memory" class="gallery-image">
+        </div>
+
+
+        <!-- MORE IMAGES -->
+
+        <div class="memory">
+          <img src="birthday.jpg" alt="Prashu memory" class="gallery-image">
+        </div>
+
+        <div class="memory">
+          <img src="prashu2.jpg" alt="Prashu memory" class="gallery-image">
+        </div>
+
+        <div class="memory">
+          <img src="prashu3.jpg" alt="Prashu memory" class="gallery-image">
+        </div>
+
+        <div class="memory">
+          <img src="prashu4.jpg" alt="Prashu memory" class="gallery-image">
+        </div>
+
+        <div class="memory">
+          <img src="prashu5.jpg" alt="Prashu memory" class="gallery-image">
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================
+         SLIDESHOW
+    ========================================== -->
+
+    <section id="slideshow-memories" class="section">
+
+      <div class="section-heading">
+
+        <span>🎥</span>
+
+        <div>
+          <h2>Watch Our Memories</h2>
+          <p>A tiny journey through our moments.</p>
+        </div>
+
+      </div>
+
+      <div class="slideshow-container">
+
+        <div class="slide active">
+          <img src="littele prashu.jpg" alt="Little Prashu">
+        </div>
+
+        <div class="slide">
+          <img src="pricess.jpg" alt="Memory">
+        </div>
+
+        <div class="slide">
+          <img src="we img2.jpg" alt="Memory">
+        </div>
+
+        <div class="slide">
+          <img src="we img2.jpg" alt="Memory">
+        </div>
+
+        <div class="slide">
+          <img src="we img3.jpg" alt="Memory">
+        </div>
+
+        <div class="slide">
+          <img src="prashu4.jpg" alt="Memory">
+        </div>
+
+        <div class="slide">
+          <img src="prashu5.jpg" alt="Memory">
+        </div>
+
+      </div>
+
+      <div class="slide-controls">
+
+        <button id="prevSlide">←</button>
+
+        <span id="slideCounter">
+          1 / 7
+        </span>
+
+        <button id="nextSlide">→</button>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================
+         WISH WALL
+    ========================================== -->
+
+    <section class="card wish-section">
+
+      <div class="section-heading">
+
+        <span>💌</span>
+
+        <div>
+          <h2>Wish Wall</h2>
+          <p>
+            Leave a little wish for Prashu.
+          </p>
+        </div>
+
+      </div>
+
+      <div class="wish-input">
+
+        <input type="text" id="wishInput" placeholder="Write a birthday wish..." maxlength="100">
+
+        <button class="btn" id="addWishBtn">
+          Add 💗
+        </button>
+
+      </div>
+
+      <div class="wishwall" id="wishWall"></div>
+
+    </section>
+
+
+    <!-- =========================================
+         SURPRISE
+    ========================================== -->
+
+    <section class="surprise-section">
+
+      <div class="surprise-card">
+
+        <div class="gift-glow">
+          🎁
+        </div>
+
+        <h2>
+          Wait... there's more 👀
+        </h2>
+
+        <p>
+          You thought that was everything?
+        </p>
+
+        <p class="muted">
+          Nope. I saved the most special surprise for last.
+        </p>
+
+        <button class="surprise-btn" id="surpriseBtn">
+          ✨ Open The Magical Box ✨
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- =========================================
+     FINAL SURPRISE
+========================================= -->
+
+    <section class="card final-surprise" id="finalSurprise">
+
+      <div class="final-icon">
+        🔐✨
+      </div>
+
+      <h2>
+        One Last Secret...
+      </h2>
+
+      <p>
+        Only my best friend knows the magic word. 🤫
+      </p>
+
+
+      <!-- PASSWORD -->
+
+      <form id="passwordForm">
+
+        <input type="password" id="passwordInput" placeholder="Enter our magic word ✨" autocomplete="off">
+
+        <button type="submit" class="btn">
+          Unlock 💗
+        </button>
+
+      </form>
+
+
+      <p id="passwordMessage" class="password-message"></p>
+
+
+      <!-- =========================================
+       BIRTHDAY LETTER
+  ========================================== -->
+
+      <div class="birthday-letter" id="birthdayLetter">
+
+        <div class="letter-sparkles">
+          ✨ 💗 ✨
+        </div>
+
+        <p class="letter-label">
+          A MESSAGE FROM YOUR PERSON
+        </p>
+
+        <h3>
+          HEY MY GIRLLLLL 🥹💗
+        </h3>
+
+
+        <div class="letter-content">
+
+          <p>
+            WISH YOU MANY MANY MANY HAPPY RETURNS OF THE DAY,
+            DEAR!!! 🎂🫶🏻
+          </p>
+
+          <p>
+            May God shower all the love, happiness and blessings
+            on you. May you achieve each and every big thing in
+            your life.
+          </p>
+
+          <p>
+            I am just genuinely so happy for you and I always
+            want to see you growing, winning, smiling and
+            achieving everything you dream of. ❤️
+          </p>
+
+          <p>
+            Aani mi na kahi goshti tula as bolun aani express
+            karun nahi sangu shakat...
+            kahi feelings na words madhe explain karna
+            khup difficult asta yaar. 🥺
+          </p>
+
+          <p>
+            But ek goshta aahe...
+          </p>
+
+          <p class="special">
+            Tu mazyasathi always special aahes
+            aani always special rahashil. ❤️
+          </p>
+
+          <p>
+            I know aapal bond kahi different aahe...
+            and honestly, I love the way we are. 🫶🏻
+          </p>
+
+          <p>
+            Bas, I want you as my best friend for life long.
+            Mala asa vatat tuzi ekun ek choti gosht suddha
+            mala mahiti asali pahije aani tu mazyasobat asali
+            pahije.
+            Because I trust you. ❤️
+          </p>
+
+          <p>
+            I know you from your bottom and
+            <strong>
+              I love you from the bottom of my heart.
+            </strong>
+            🫂💗
+          </p>
+
+          <p>
+            Tuzya birthday la mala kahi plan karayla nahi milat,
+            kahi special pan nahi karayla milat...
+            but as always,
+            <strong>you're my person.</strong>
+          </p>
+
+          <p>
+            So I just want to remember your birthday and wish you
+            at <strong>12 AM.</strong> 🥹
+            Because for me, that's our little legacy.
+          </p>
+
+          <p>
+            Mi aapla to bond khup miss karte...
+            jevha aapan school la hoto sobat.
+            Sharing, caring, laughing, fighting and sagal same hot.
+            Those days were really special. 🥺❤️
+          </p>
+
+          <p>
+            Aata way change zalay...
+            Tu dusarikde, mi dusarikde...
+            pan ek goshta kadhi change honar nahi.
+          </p>
+
+          <p class="big-special">
+            TUZI JAGA MATR TUZICH RAHANAR NEHAMI. ❤️
+          </p>
+
+          <p>
+            No one can replace you.
+            No one can take your place.
+            Because you're not just my friend...
+            <strong>you're my person.</strong> 🫂
+          </p>
+
+          <p>
+            On your birthday, I just want you to get all the
+            happiness in this world. 🌎💗
+          </p>
+
+          <p>
+            Bohot bohot bohot badhaiyaa!!! 🎂
+            I wish you a lot of success, happiness, peace and love
+            in your life.
+          </p>
+
+          <p>
+            And once again,
+            mi always aahe aani always rahnar pn.
+            So don't take tension.
+            Just be happy. ❤️
+          </p>
+
+          <p>
+            I want you to be that active one,
+            smiling one,
+            crazy one,
+            and the one who enjoys every moment of life.
+            🥹😂💗
+          </p>
+
+          <p class="final-wish">
+            I JUST WANT TO SEE YOU HAPPY. ❤️
+          </p>
+
+        </div>
+
+
+        <div class="birthday-end">
+
+          <p>
+            ONCE AGAIN...
+          </p>
+
+          <h4>
+            HAPPY BIRTHDAY PRASHUUUUU 🎂💗
+          </h4>
+
+          <span>
+            Your person. Your bestie. For life. ♾️❤️
+          </span>
+
+          <strong>
+            ILYSM PRASHUUUUUUU 🥹🫶🏻💗
+          </strong>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- PASSWORD -->
+
+    <form id="passwordForm">
+
+      <input type="password" id="passwordInput" placeholder="Enter the magic word ✨" autocomplete="off">
+
+      <button type="submit" class="btn">
+        Unlock 💗
+      </button>
+
+    </form>
+
+    <p id="passwordMessage" class="password-message"></p>
+
+
+    <!-- FINAL VIDEO -->
+
+    <div id="finalVideoContainer" class="final-video">
+
+      <div class="video-title">
+        🎬 A Message For You
+      </div>
+
+      <video controls playsinline>
+        <source src="Soloop_20250911125903.mp4" type="video/mp4">
+
+        Your browser does not support video.
+      </video>
+
+    </div>
+
+    </section>
+
+
+    <!-- =========================================
+         FOOTER
+    ========================================== -->
+
+    <footer>
+
+      <div class="footer-heart">
+        ♥
+      </div>
+
+      <p>
+        Made with love, memories & a little madness
+      </p>
+
+      <strong>
+        — Vishakha for Prashu 💗
+      </strong>
+
+    </footer>
+
+  </div>
+
+
+  <!-- =========================================
+       IMAGE LIGHTBOX
+  ========================================== -->
+
+  <div class="lightbox" id="lightbox">
+
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">
+      ×
+    </button>
+
+    <img id="lightboxImage" src="" alt="Memory">
+
+  </div>
+
+
+  <!-- SCRIPT -->
+
+  <script src="scrip.js"></script>
+
+</body>
+
+</html>
